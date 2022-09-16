@@ -76,7 +76,7 @@
     <maven.compiler.target>1.6</maven.compiler.target>
     <httpcore.version>4.4.15</httpcore.version>
     <commons-logging.version>1.2</commons-logging.version>
-    <commons-codec.version>1.11</commons-codec.version>
+    <commons-codec.version>1.15</commons-codec.version>
     <ehcache.version>2.6.11</ehcache.version>
     <memcached.version>2.12.3</memcached.version>
     <slf4j.version>1.7.25</slf4j.version>
@@ -266,18 +266,18 @@
           <postProcess>
             <copy todir="target/site/tutorial/html" failonerror="false">
               <fileset dir="target/docbkx/html/index">
-                <include name="**/*.html" />
+                <include name="**/*.html"/>
               </fileset>
             </copy>
             <copy todir="target/site/tutorial/html" failonerror="false">
               <fileset dir="src/docbkx/resources">
-                <include name="**/*.css" />
-                <include name="**/*.png" />
-                <include name="**/*.gif" />
-                <include name="**/*.jpg" />
+                <include name="**/*.css"/>
+                <include name="**/*.png"/>
+                <include name="**/*.gif"/>
+                <include name="**/*.jpg"/>
               </fileset>
             </copy>
-            <copy file="target/docbkx/pdf/index.pdf" tofile="target/site/tutorial/pdf/httpclient-tutorial.pdf" failonerror="false" />
+            <copy file="target/docbkx/pdf/index.pdf" tofile="target/site/tutorial/pdf/httpclient-tutorial.pdf" failonerror="false"/>
           </postProcess>
         </configuration>
       </plugin>
